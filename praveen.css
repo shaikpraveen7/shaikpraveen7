@@ -1,68 +1,49 @@
-list{
+h1{
+  background: #addd;
+  text-align: center;
+}
+nav list{
   display: flex;
 }
-.pj{
-  text-align: center;
-  background: gray;
-  color: #555154;
+
+nav list li{
+  list-style: none;
+  margin: 2%;
+  box-shadow: 2px 2px 2px 1px black;
+  padding: 2% 3%;
 }
-img{
-  border-radius: 50%;
-  width: 25%;
-  margin: auto;
-}
-nav{
-  padding: 3px 3px 3px 3px;
-  color: #75666563;
-  background: #85145151;
+nav list li a{
+  text-decoration: none;
 }
 .box1{
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 1%;
-  margin-top: 1%;
-  background: #11225555;
-}
-.box0{
-  box-shadow: 3px 3px 3px 3px black;
-  margin-top: 1%;
-  padding: 3px 3px 3px 3px;
+  width: 100%;
 }
 .box2{
-  padding: 4%;
-  box-shadow: 2px 2px 2px 2px black;
-  background: #1C2833;
-  color: #1C2833;
+  width: 98%;
   display: flex;
   text-align: center;
-  margin-bottom: 1%;
+  margin: 1%;
+  box-shadow: 2px 2px 2px 2px red;
+  justify-content: space-around;
 }
-nav li{
-  padding: 5px 5px 5px 5px;
-  text-shadow: 2px 2px 2px 2px black;
-  color: #CC4400;
-  background:#D5D8DC  ;
-  border: 10px;
-  list-style: none;
-  text-decoration: none;
-  box-shadow: 2px 2px 2px 2px black;
-  margin: 10px;
-}
-nav li a{
-  text-decoration: none;
-}
-section {
-  box-shadow: 2px 2px 2px 2px #ABB2B9;
-  /* margin-top: 2%;
-  margin-bottom: 8%; */
-  /* height: 50%; */
-  width: 50%;
-  text-align: center;
-  padding: 5%;
-  background:#ABB2B9 ;
-  background-blend-mode: overlay;
-  font-size: 20px;
-}
-html{
-  width: 60%;
+img{
+  max-width: 20vw;
+  max-height: 20vh;
   margin: auto;
 }
+
+
+@media (min-device-width:320px) and (max-device-width:480px) {
+.box2{
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+img{
+  max-width: 40vw;
+  max-height: 40vh;
+}
+section{
+  width:100%;
+}
+}
+
